@@ -1,0 +1,13 @@
+Create a C++ function named "CountPermutations" that determines the total number of
+permutations of an array A of length N containing distinct integers, such that for all pairs (i, j)
+with 1≤i≤ j ≤ N and (i + j) being an odd number:
+
+(Ai + Aj)%2 = K
+where K is either 0 or 1.
+The function should accept two parameters: an integer K and a
+vector<int> named A representing the array of distinct integers.
+The function should return an integer indicating the count of such permutations modulo 1e9 +7.
+The function `CountPermutations should handle input parameters within the following ranges:
+The length of the array N is between 1 and 1e5.
+Each element of the array A is a distinct integer within the range [1, 1e9].
+The integer K is either 0 or 1.
