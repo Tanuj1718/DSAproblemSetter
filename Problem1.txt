@@ -1,0 +1,16 @@
+Create a C++ function named MaxCoins that determines the maximum number of coins you can earn in a card game. In this game, you have a deck of n cards, each with one of k types. You are given a sequence a representing the types of cards in the deck from top to bottom. Both n and k are even numbers.
+The function should accept two parameters:
+•	an integer n representing the total number of cards in the deck,
+•	an integer k representing the number of different card types,
+•	a vector<int> a representing the types of cards in the deck from top to bottom.
+The game proceeds as follows:
+1.	Draw the top k cards from the deck.
+2.	Each turn, you:
+•	Choose exactly two cards from your hand and play them. If these cards have the same type, you earn a coin.
+•	If the deck is not empty, draw exactly two top cards from it.
+•	If both your hand and deck are empty, the game ends. Otherwise, a new turn begins.
+The function should return an integer indicating the maximum number of coins you can earn during the game. Ensure the function handles cases optimally to maximize the number of coins earned.
+The function MaxCoins should handle input parameters within the following ranges:
+•	The number of cards, n, is between 2 and 1000, both inclusive and even.
+•	The number of card types, k, is between 2 and n, both inclusive and even.
+•	Each type of card in the sequence a is between 1 and k.
